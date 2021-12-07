@@ -216,7 +216,7 @@ section {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 485px) {
   #flowers {
     transform: rotate(-40deg) translate(100px, 90px) scale(0.7);
   }
