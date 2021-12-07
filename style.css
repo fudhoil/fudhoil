@@ -40,11 +40,11 @@ body > div {
   font-size: 50px;
 }
 #img-p-usumin {
-  min-width: 340px;
+  min-width: 343px;
 }
 .box {
   background-color: #898990;
-  height: 100vh;
+  height: 84vh;
   width: 80%;
 }
 #box-2,
@@ -71,9 +71,6 @@ body > div {
   animation-fill-mode: forwards;
 }
 
-/* #about,
-#welcome {
-} */
 @keyframes navFadeInUp {
   0% {
     transform: translate3d(0, 10px, 0);
