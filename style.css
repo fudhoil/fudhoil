@@ -32,12 +32,25 @@ body > div {
   /* color: #232325; */
   color: #fff;
   mix-blend-mode: difference;
+  font-size: 25px;
+}
+#text-3 {
+  /* color: #232325; */
+  color: #fff;
+  font-size: 50px;
 }
 #img-p-usumin {
-  position: absolute;
+  min-width: 340px;
 }
-#box-2 {
+.box {
+  background-color: #898990;
+  height: 100vh;
+  width: 80%;
+}
+#box-2,
+#box-3 {
   background-color: #d7ff66;
+  width: 100%;
 }
 
 #navbar {
@@ -163,6 +176,19 @@ section {
 .brand {
   max-width: 160px;
 }
+#kio-2 > span {
+  background-color: #d32;
+  color: #fff;
+  box-shadow: -10px 0px 0 7px #d32, 10px 0px 0 7px #d32, 0 0 0 7px #d32;
+  box-decoration-break: clone;
+}
+#about > span,
+#welcome > span {
+  background-color: #d32;
+  color: #fff;
+  box-shadow: 0px 0px 0 2px #d32, 0px 0px 0 0px #d32, 0 0 0 0px #d32;
+  box-decoration-break: clone;
+}
 
 @media screen and (max-width: 1024px) {
   #flowers {
@@ -191,24 +217,6 @@ section {
   #row-1 {
     height: 80vh;
   }
-}
-#kio-2 > span {
-  background-color: #d32;
-  color: #fff;
-  box-shadow: -10px 0px 0 7px #d32, 10px 0px 0 7px #d32, 0 0 0 7px #d32;
-  box-decoration-break: clone;
-}
-#about > span,
-#welcome > span {
-  background-color: #d32;
-  color: #fff;
-  box-shadow: 0px 0px 0 2px #d32, 0px 0px 0 0px #d32, 0 0 0 0px #d32;
-  box-decoration-break: clone;
-}
-.box {
-  background-color: #898990;
-  height: 100vh;
-  width: 80%;
 }
 @media screen and (max-width: 768px) {
   #flowers {
