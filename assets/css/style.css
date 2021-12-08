@@ -37,9 +37,20 @@ body > div {
 #text-3 {
   /* color: #232325; */
   color: #fff;
+  mix-blend-mode: difference;
+
   font-size: 50px;
 }
+#text-4 {
+  /* color: #232325; */
+  color: #fff;
+  mix-blend-mode: difference;
+  font-size: 25px;
+}
 #img-p-usumin {
+  min-width: 343px;
+}
+#img-p-other {
   min-width: 343px;
 }
 .box {
@@ -51,6 +62,11 @@ body > div {
 #box-3 {
   background-color: #d7ff66;
   width: 100%;
+}
+#box-4 {
+  background-color: #d7ff66;
+  width: 100%;
+  height: 20vh;
 }
 
 #navbar {
@@ -185,6 +201,11 @@ section {
   color: #fff;
   box-shadow: 0px 0px 0 2px #d32, 0px 0px 0 0px #d32, 0 0 0 0px #d32;
   box-decoration-break: clone;
+}
+
+/* swiperjs */
+.swiper {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
