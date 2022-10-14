@@ -1,6 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import {
+  DiLaravel,
+  DiReact,
+  DiAndroid,
+  DiJavascript,
+  DiJqueryLogo,
+  DiGoogleCloudPlatform,
+  DiPhp,
+  DiPostgresql,
+  DiMongodb,
+  DiNodejs,
+  DiMysql,
+  DiGit,
+} from "react-icons/di";
 
 type Props = {};
 
@@ -16,22 +30,22 @@ const Skills = (props: Props) => {
       </h3>
 
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
-        Hover over a skill for currency proficiency
+        Full Stack Developer Hardskils
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
+        <Skill directionLeft={true} component={<DiLaravel />} />
+        <Skill directionLeft={true} component={<DiMongodb />} />
+        <Skill directionLeft={true} component={<DiJavascript />} />
+        <Skill directionLeft={true} component={<DiReact />} />
+        <Skill directionLeft={true} component={<DiAndroid />} />
+        <Skill directionLeft={true} component={<DiPhp />} />
+        <Skill directionLeft={false} component={<DiJqueryLogo />} />
+        <Skill directionLeft={false} component={<DiNodejs />} />
+        <Skill directionLeft={false} component={<DiGoogleCloudPlatform />} />
+        <Skill directionLeft={false} component={<DiPostgresql />} />
+        <Skill directionLeft={false} component={<DiGit />} />
+        <Skill directionLeft={false} component={<DiMysql />} />
       </div>
     </motion.div>
   );

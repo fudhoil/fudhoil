@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
-import { DiLaravel } from "react-icons/di";
 
 type Props = {
   directionLeft?: boolean;
+  component?: React.ReactNode;
 };
 
-const Skill = ({ directionLeft }: Props) => {
+const Skill = ({ directionLeft, component }: Props) => {
   return (
     <div>
       <motion.div
@@ -23,8 +23,8 @@ const Skill = ({ directionLeft }: Props) => {
           opacity: 1,
         }}
         viewport={{ once: true }}>
-        <IconContext.Provider value={{ size: "3.0rem", color: "#F05340" }}>
-          <DiLaravel />
+        <IconContext.Provider value={{ size: "3.0rem" }}>
+          {component}
         </IconContext.Provider>
       </motion.div>
     </div>
