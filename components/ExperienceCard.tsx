@@ -64,7 +64,7 @@ const ExperienceCard = ({
 
         <ul className="list-disc space-y-4 ml-5 text-md mb-5">
           {description &&
-            description.map((item: any, i) => (
+            description.map((item: any, i: any) => (
               <li className="text-gray-300" key={i}>
                 {item}
               </li>
