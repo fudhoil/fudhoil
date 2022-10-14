@@ -30,6 +30,14 @@ const Home: NextPage = () => {
       <section id="projects" className="snap-start">
         <Projects />
       </section>
+
+      <footer className="snap-start">
+        <div className="h-20 bg-[#F7AB0A]/10 sticky">
+          <div className="flex justify-center items-center h-full">
+            <p className="text-sm text-gray-500">Made with ❤️ by Fudhoil</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

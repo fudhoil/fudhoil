@@ -63,9 +63,6 @@ const Header = (props: Props) => {
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          oke
-        </p>
       </motion.div>
     </header>
   );
