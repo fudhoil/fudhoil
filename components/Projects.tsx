@@ -16,13 +16,14 @@ const Projects = (props: Props) => {
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
       scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {projects.map((project, i) => (
-          <div className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-20 md:p-44 h-screen">
+          <div
+            key={i}
+            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-20 md:p-44 h-screen">
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.5 }}
               whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              key={i}>
+              viewport={{ once: true }}>
               <Image
                 className="w-[200px]"
                 src="https://ik.imagekit.io/4iquqthi3/sahabatmuseum_WRHjOZDrF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737611"
