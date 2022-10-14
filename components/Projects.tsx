@@ -21,7 +21,8 @@ const Projects = (props: Props) => {
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.5 }}
               whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}>
+              viewport={{ once: true }}
+              key={i}>
               <Image
                 className="w-[200px]"
                 src="https://ik.imagekit.io/4iquqthi3/sahabatmuseum_WRHjOZDrF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737611"

@@ -52,9 +52,10 @@ const ExperienceCard = ({
         <p className="font-bold text-md mt-1">{company}</p>
         <div className="flex space-x-2 my-2">
           {icon &&
-            icon.map((item) => (
+            icon.map((item, i) => (
               <IconContext.Provider
-                value={{ size: "1.5rem", color: item.color }}>
+                value={{ size: "1.5rem", color: item.color }}
+                key={i}>
                 {item.logo}
               </IconContext.Provider>
             ))}
