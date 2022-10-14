@@ -7,10 +7,12 @@ import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
 // import Contact from "../components/Contact"
 import Projects from "../components/Projects";
+import Link from "next/link";
+import { SiHurriyetemlak } from "react-icons/si";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 select-none">
+    <div className="bg-gradient-to-b from-[#240046] via-[#020405] to-[#161a1d] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 select-none scroll-smooth">
       <Head>
         <title>Fudhoil</title>
       </Head>
@@ -30,11 +32,13 @@ const Home: NextPage = () => {
       <section id="projects" className="snap-start">
         <Projects />
       </section>
-
-      <footer className="snap-start">
-        <div className="h-20 bg-[#F7AB0A]/10 sticky">
-          <div className="flex justify-center items-center h-full">
-            <p className="text-sm text-gray-500">Made with ❤️ by Fudhoil</p>
+      <footer className="absolute bottom-0 w-full z-20">
+        <div className="h-20">
+          <div className="flex justify-end items-center h-full mr-9 space-x-3">
+            <p className="text-sm text-gray-500">Made by Fudhoil</p>
+            <Link href={"#hero"} className="cursor-pointer">
+              <SiHurriyetemlak />
+            </Link>
           </div>
         </div>
       </footer>

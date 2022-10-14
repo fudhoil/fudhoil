@@ -32,12 +32,13 @@ const About = (props: Props) => {
           alt=""
           width={300}
           height={300}
+          draggable={false}
         />
       </motion.div>
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
           Here is a{" "}
-          <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
+          <span className="underline decoration-[#5F9DF7]/50">little</span>{" "}
           background
         </h4>
         <p className="text-sm">Driven focusly as web developer</p>

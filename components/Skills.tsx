@@ -29,7 +29,7 @@ const Skills = (props: Props) => {
         Skills
       </h3>
 
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
+      <h3 className="absolute top-36 uppercase tracking-[3px] text-[#5F9DF7] text-sm">
         Full Stack Developer Hardskils
       </h3>
 

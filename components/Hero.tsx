@@ -25,6 +25,7 @@ const Hero = (props: Props) => {
         alt=""
         width={200}
         height={200}
+        draggable={false}
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] pointer-events-none">
@@ -32,10 +33,10 @@ const Hero = (props: Props) => {
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10 pointer-events-none">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <Cursor cursorColor="#5F9DF7" />
         </h1>
 
-        <div className="pt-5">
+        <div className="pt-5 space-x-2">
           <Link href={"#about"}>
             <button className="heroButton">About</button>
           </Link>

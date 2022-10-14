@@ -62,6 +62,7 @@ const Header = (props: Props) => {
           network="email"
           fgColor="gray"
           bgColor="transparent"
+          url="mailto:fudhoilhlf@gmail.com"
         />
       </motion.div>
     </header>
