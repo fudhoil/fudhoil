@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
+import Image from "next/image";
 
 type Props = {};
 
@@ -18,16 +19,18 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
+      <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
         src="https://media-exp1.licdn.com/dms/image/C4D03AQF-qbulAQuChQ/profile-displayphoto-shrink_800_800/0/1619186868523?e=1671062400&v=beta&t=GNl6dOVIWMtTaRT7BbDqNIQaukvANc5hLpOktscuEEI"
         alt=""
+        width={200}
+        height={200}
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] pointer-events-none">
           Software Engineer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="text-5xl lg:text-6xl font-semibold px-10 pointer-events-none">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
