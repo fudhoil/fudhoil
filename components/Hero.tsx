@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
         alt=""
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-grey-500 pb-2 tracking-[15px]">
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
@@ -35,6 +35,12 @@ const Hero = (props: Props) => {
         <div className="pt-5">
           <Link href={"#about"}>
             <button className="heroButton">About</button>
+          </Link>
+          <Link href={"#experience"}>
+            <button className="heroButton">Experience</button>
+          </Link>
+          <Link href={"#skills"}>
+            <button className="heroButton">Skills</button>
           </Link>
         </div>
       </div>
