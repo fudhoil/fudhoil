@@ -43,8 +43,9 @@ const Projects = (props: Props) => {
     {
       image:
         "https://ik.imagekit.io/4iquqthi3/qrcode_UQ0XtwVvP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665820428646",
+      title: "React Native App for UGM International Forum",
       description:
-        "QR Code Scanner is a mobile app using React Native that allows users to scan QR Code and get the data from the QR Code and integrated to database. Data from the QR Code is used to check-in the user. All data from the QR Code is encrypted securely. This app is the only app that can decrypt the data from the QR Code.",
+        "QR Code Scanner (only for this event) is a mobile app using React Native that allows users to scan QR Code and get the data from the QR Code and integrated to database. Data from the QR Code is used to check-in the user. All data from the QR Code is encrypted securely. This app is the only app that can decrypt the data from the QR Code.",
     },
     {
       image:
