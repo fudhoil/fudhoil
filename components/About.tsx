@@ -43,13 +43,18 @@ const About = (props: Props) => {
           draggable={false}
         />
       </motion.div>
-      <div className="space-y-10 px-0 md:px-10">
+      <div className="space-y-10 px-0 md:px-10 text-start max-w-xl md:max-w-sm lg:max-w-xl">
         <h4 className="text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#5F9DF7]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-sm">Driven focusly as web developer</p>
+        <p className="text-sm">
+          Driven focusly as Software Engineer. In general, i am a (MERN) Full
+          Stack Developer while able to build a software in various Stack Tools.
+          Througout this years i've built and contributed to several projects
+          both in a teams and personal environment.
+        </p>
       </div>
     </motion.div>
   );

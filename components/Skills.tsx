@@ -20,7 +20,7 @@ import {
   SiGitlab,
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
-import { TbBrandReactNative } from "react-icons/tb";
+import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
 
 type Props = {};
 
@@ -54,6 +54,7 @@ const Skills = (props: Props) => {
         <Skill directionLeft={false} component={<SiPostgresql />} />
         <Skill directionLeft={false} component={<SiGit />} />
         <Skill directionLeft={false} component={<SiGitlab />} />
+        <Skill directionLeft={false} component={<TbBrandNextjs />} />
         <Skill directionLeft={false} component={<SiMysql />} />
         <Skill directionLeft={false} component={<SiApollographql />} />
         <Skill directionLeft={false} component={<SiGraphql />} />
