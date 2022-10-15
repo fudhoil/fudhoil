@@ -41,7 +41,7 @@ const Projects = (props: Props) => {
     }
   }, []);
   return (
-    <div className="h-screen relative flex overflow-visible flex-col md:flex-row text-left max-w-full justify-evenly mx-auto items-center z-0">
+    <div className="h-screen pb-14 md:pb-32 relative flex overflow-visible flex-col md:flex-row text-left max-w-full justify-evenly mx-auto items-center z-0">
       <h3 className="absolute flex flex-col top-24 uppercase tracking-[20px] text-gray-500 text-2xl items-center">
         Projects
         <p>
@@ -53,7 +53,7 @@ const Projects = (props: Props) => {
 
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80">
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 md:top-[10%]">
         {projects.map((project, i) => (
           <div
             key={i}

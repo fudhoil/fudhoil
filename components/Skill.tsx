@@ -22,7 +22,8 @@ const Skill = ({ directionLeft, component }: Props) => {
           x: 0,
           opacity: 1,
         }}
-        viewport={{ once: true }}>
+        // viewport={{ once: true }}
+      >
         <IconContext.Provider value={{ size: "3.0rem" }}>
           {component}
         </IconContext.Provider>

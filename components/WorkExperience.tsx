@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 import {
-  DiLaravel,
-  DiReact,
-  DiAndroid,
-  DiJavascript,
-  DiJqueryLogo,
-  DiGoogleCloudPlatform,
-  DiPhp,
-  DiPostgresql,
-  DiMongodb,
-  DiNodejs,
-  DiMysql,
-  DiGit,
-  DiFirebase,
-  DiBootstrap,
-  DiMaterializecss,
-} from "react-icons/di";
+  SiLaravel,
+  SiReact,
+  SiAndroid,
+  SiJavascript,
+  SiPhp,
+  SiPostgresql,
+  SiMongodb,
+  SiMysql,
+  SiGit,
+  SiApollographql,
+  SiGraphql,
+  SiSqlite,
+  SiTailwindcss,
+  SiVercel,
+  SiGithub,
+  SiGitlab,
+} from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
 
 type Props = {};
 
 const WorkExperience = (props: Props) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    }
+  }, []);
+
   const experience = [
     {
       image:
@@ -30,16 +41,16 @@ const WorkExperience = (props: Props) => {
       company: "Proxsis & Company",
       icon: [
         {
-          logo: <DiLaravel />,
+          logo: <SiLaravel />,
           color: "#FF2D20",
         },
         {
-          logo: <DiPhp />,
+          logo: <SiPhp />,
           color: "#777BB4",
         },
         {
-          logo: <DiJqueryLogo />,
-          color: "#0769AD",
+          logo: <SiJavascript />,
+          color: "#F7DF1E",
         },
       ],
       date: "2021",
@@ -56,19 +67,19 @@ const WorkExperience = (props: Props) => {
       company: "Freelance",
       icon: [
         {
-          logo: <DiLaravel />,
+          logo: <SiLaravel />,
           color: "#FF2D20",
         },
         {
-          logo: <DiReact />,
+          logo: <SiReact />,
           color: "#61DAFB",
         },
         {
-          logo: <DiNodejs />,
+          logo: <FaNodeJs />,
           color: "#339933",
         },
         {
-          logo: <DiMongodb />,
+          logo: <SiMongodb />,
           color: "#47A248",
         },
       ],
@@ -89,8 +100,13 @@ const WorkExperience = (props: Props) => {
       className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl  text-center z-30">
         Work Experience
+        <p>
+          <span className="text-sm text-[#5F9DF7] tracking-[3px]">
+            {(isMobile && "Swipe to see more") || "hold shift & scroll"}
+          </span>
+        </p>
       </h3>
-      <div className="w-full flex space-x-5 mt-32 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80">
+      <div className="w-full flex space-x-5 mt-32 md:mt-32 px-10 mb-20 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80">
         {experience.map((item, index) => (
           <ExperienceCard
             key={index}

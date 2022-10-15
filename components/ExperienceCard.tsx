@@ -24,7 +24,7 @@ const ExperienceCard = ({
   description,
 }: Props) => {
   return (
-    <article className="flex flex-col rounded-lg items-left md:items-center space-y-7 flex-shrink-0 w-[400px] md:w-[600px] xl:-w[900px] snap-start md:snap-center bg-[#303030] hover:bg-[#5F9DF7]/20 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-left lg:items-center mb-5 md:mb-10 space-y-7 flex-shrink-0 mt-20 w-[400px] md:w-[900px] snap-start lg:snap-center bg-[#303030] hover:bg-[#5F9DF7]/20 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.div
         initial={{
           x: 100,
@@ -37,13 +37,14 @@ const ExperienceCard = ({
           x: 0,
           opacity: 1,
         }}
-        viewport={{ once: true }}>
+        viewport={{ once: true }}
+        className="ml-10">
         <Image
           className="w-12 h-12 rounded-full xl:w-[100px] xl:h-[100px] object-cover object-center"
           src={image}
           alt=""
-          width={100}
-          height={100}
+          width={70}
+          height={70}
           draggable={false}
         />
       </motion.div>
@@ -55,7 +56,7 @@ const ExperienceCard = ({
           {icon &&
             icon.map((item, i) => (
               <IconContext.Provider
-                value={{ size: "2.5rem", color: item.color }}
+                value={{ size: "2.0rem", color: item.color }}
                 key={i}>
                 {item.logo}
               </IconContext.Provider>

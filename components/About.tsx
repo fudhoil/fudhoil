@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 type Props = {};
 
 const About = (props: Props) => {
+  const [phoneScreen, setPhoneScreen] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      setPhoneScreen(false);
+    }
+  }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -30,8 +38,8 @@ const About = (props: Props) => {
           src="https://media-exp1.licdn.com/dms/image/C4D03AQF-qbulAQuChQ/profile-displayphoto-shrink_800_800/0/1619186868523?e=1671062400&v=beta&t=GNl6dOVIWMtTaRT7BbDqNIQaukvANc5hLpOktscuEEI"
           className="mt-20 md:mt-10 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-58 md:h-90 xl:w-[300px] xl:h-[300px]"
           alt=""
-          width={300}
-          height={300}
+          width={phoneScreen ? 220 : 300}
+          height={phoneScreen ? 220 : 300}
           draggable={false}
         />
       </motion.div>
