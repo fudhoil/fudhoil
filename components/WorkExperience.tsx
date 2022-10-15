@@ -52,24 +52,25 @@ const WorkExperience = (props: Props) => {
           logo: <SiJavascript />,
           color: "#F7DF1E",
         },
+        {
+          logo: <SiMysql />,
+          color: "#4479A1",
+        },
       ],
-      date: "2021",
+      date: "Feb 2022 - July 2022",
       description: [
-        "Developed a web application for a local business using React, Next.js, Tailwind CSS, and Firebase.",
-        "Developed a web application for a local business using React, Next.js, Tailwind CSS, and Firebase.",
-        "Developed a web application for a local business using React, Next.js, Tailwind CSS, and Firebase.",
+        "Developed a 'SuperApp'/web application for Human Resource Management at Proxsis & Company",
+        "Build an interactive user friendly and responsive interface using Laravel Blade and Javascript",
+        "Integrating web app and mobile app via Laravel api resources",
       ],
+      link: "https://proxsisgroup.com/",
     },
     {
       image:
         "https://lh3.googleusercontent.com/a/ALm5wu0eUucbzea4H4kSut4jBK5DneLdcl6wFClpAk_Lug4=s288-p-rw-no",
       title: "Full Stack Developer",
-      company: "Freelance",
+      company: "BIGIO",
       icon: [
-        {
-          logo: <SiLaravel />,
-          color: "#FF2D20",
-        },
         {
           logo: <SiReact />,
           color: "#61DAFB",
@@ -79,16 +80,17 @@ const WorkExperience = (props: Props) => {
           color: "#339933",
         },
         {
-          logo: <SiMongodb />,
-          color: "#47A248",
+          logo: <SiPostgresql />,
+          color: "#336791",
         },
       ],
-      date: "2021 - Present",
+      date: "Aug 2022 - Dec 2022",
       description: [
-        "Developed a web application for a local business using React, Next.js, Tailwind CSS, and Firebase.",
-        "Developed a web application for a local business using React, Next.js, Tailwind CSS, and Firebase.",
-        "Developed a web application for a local business using React, Next.js, Tailwind CSS, and Firebase.",
+        "Creating a React Js web application for a client",
+        "Developing a Node Js backend for the web application",
+        "Integrating the web application with a PostgreSQL database",
       ],
+      link: "https://bigio.com/",
     },
   ];
 
@@ -116,6 +118,7 @@ const WorkExperience = (props: Props) => {
             icon={item.icon}
             date={item.date}
             description={item.description}
+            link={item.link}
           />
         ))}
       </div>

@@ -19,19 +19,46 @@ const Projects = (props: Props) => {
     },
     {
       image:
-        "https://ik.imagekit.io/4iquqthi3/sahabatmuseum_WRHjOZDrF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737611",
-      title: "Tailwind CSS",
+        "https://ik.imagekit.io/4iquqthi3/react-amazon_CficiHbdr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665820014334",
+      title: "React Amazon Clone",
       description:
-        "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.",
-      link: "https://tailwindcss.com/",
+        "Amazon Clone is a web application that allows users to explore products and add them to the cart. Users can also checkout the products in the cart.",
+      link: "https://reactamazon.vercel.com/",
     },
     {
       image:
-        "https://ik.imagekit.io/4iquqthi3/sahabatmuseum_WRHjOZDrF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737611",
-      title: "Framer Motion",
+        "https://ik.imagekit.io/4iquqthi3/ss_Proxsis_web_IzbyLjaNi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737216",
+      title: "Proxsis Web",
       description:
-        "Framer Motion is a production-ready motion library for React.",
-      link: "https://www.framer.com/motion/",
+        "Proxsis Web is a web application for Human Resources Management. This application is used to manage employee data, attendance, and payroll.",
+    },
+    {
+      image:
+        "https://ik.imagekit.io/4iquqthi3/react-admin-ugm_0nqfAkco-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665819859567",
+      title: "React Admin Dashboard for UGM International Forum",
+      description:
+        "Admin Dashboard is a web application that allows users to manage Submitted paper and Registered data from user.",
+      link: "https://react-admin-ugm.vercel.app/",
+    },
+    {
+      image:
+        "https://ik.imagekit.io/4iquqthi3/qrcode_UQ0XtwVvP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665820428646",
+      description:
+        "QR Code Scanner is a mobile app using React Native that allows users to scan QR Code and get the data from the QR Code and integrated to database. Data from the QR Code is used to check-in the user. All data from the QR Code is encrypted securely. This app is the only app that can decrypt the data from the QR Code.",
+    },
+    {
+      image:
+        "https://ik.imagekit.io/4iquqthi3/mcn-ss_9IyNnD4XN.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737409",
+      title: "Magitra Citra Nusantara (MCN) Website",
+      description:
+        "Magitra Citra Nusantara (MCN) is a web application that allows users to explore the company and its products. Users can also contact the company.",
+    },
+    {
+      image:
+        "https://ik.imagekit.io/4iquqthi3/wwc_91QVD0Js9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665821134480",
+      title: "World Wide Community (WWC) Website",
+      description:
+        "World Wide Community (WWC) is a web application that allows users to explore the event and its details. Users can also register for the event.",
     },
   ];
 
@@ -57,7 +84,7 @@ const Projects = (props: Props) => {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-20 md:p-44 h-screen">
+            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-20 md:p-44 md:pb-2 h-screen">
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.5 }}
@@ -67,16 +94,16 @@ const Projects = (props: Props) => {
                 className="w-[200px]"
                 src={project.image}
                 alt="Sahabat Museum"
-                width={250}
-                height={140}
+                width={450}
+                height={240}
                 draggable={false}
               />
             </motion.div>
 
-            <div className="space-y-5 px-10 md:px-10 max-w-6xl">
+            <div className="space-y-5 px-1 md:px-10 max-w-6xl">
               <h4 className="text-xl font-semibold text-center">
                 <span className="underline decoration-[#5F9DF7]/50">
-                  Case Study {i + 1} of 4:
+                  Case Study {i + 1} of {projects.length}:
                 </span>{" "}
                 {project.title}
               </h4>

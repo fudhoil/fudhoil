@@ -10,11 +10,12 @@ const Hero = (props: Props) => {
   const [text, counter, backspace] = useTypewriter({
     words: [
       "Hi, The Name's Fudhoil",
-      "Guy-who-loves-Code.tsx",
-      "Engaged with Stackoverflow",
+      "guy-who-loves-Code.tsx",
+      "stack-overflow-Addict.tsx",
     ],
     loop: true,
     delaySpeed: 2000,
+    deleteSpeed: 50,
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
