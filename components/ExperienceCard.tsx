@@ -55,14 +55,16 @@ const ExperienceCard = ({
 
       <div className="px-0 md:px-10">
         <h4 className="text-sm font-light">{title}</h4>
-        <Link href={link} target={"_blank"}>
-          <p className="font-bold text-md mt-1 flex underline decoration-[#5F9DF7]">
-            {company}
-            <IconContext.Provider
-              value={{ size: "2.0rem", className: "text-[#5F9DF7]" }}>
-              <GiClick className="mt-2 ml-3" />
-            </IconContext.Provider>
-          </p>
+        <Link href={link}>
+          <a target="_blank" rel="noreferrer">
+            <p className="font-bold text-md mt-1 flex underline decoration-[#5F9DF7]">
+              {company}
+              <IconContext.Provider
+                value={{ size: "2.0rem", className: "text-[#5F9DF7]" }}>
+                <GiClick className="mt-2 ml-3" />
+              </IconContext.Provider>
+            </p>
+          </a>
         </Link>
         <div className="flex space-x-2 my-2 bg-[#3a3a3a]">
           {icon &&

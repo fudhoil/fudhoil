@@ -90,7 +90,7 @@ const WorkExperience = (props: Props) => {
         "Developing a Node Js backend for the web application",
         "Integrating the web application with a PostgreSQL database",
       ],
-      link: "https://bigio.com/",
+      link: "https://bigio.id/",
     },
   ];
 

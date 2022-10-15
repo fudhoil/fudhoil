@@ -35,7 +35,16 @@ const Home: NextPage = () => {
       <footer className="absolute bottom-0 w-full z-20">
         <div className="h-20">
           <div className="flex justify-end items-center h-full mr-9 space-x-3">
-            <p className="text-sm text-gray-500">Made by Fudhoil</p>
+            <p className="text-sm text-gray-500">
+              Made by{" "}
+              <Link href={"https://github.com/fudhoil"}>
+                <a
+                  target={"_blank"}
+                  className="underline hover:decoration-[#5F9DF7]">
+                  Fudhoil
+                </a>
+              </Link>
+            </p>
             <Link href={"#hero"} className="cursor-pointer">
               <SiHurriyetemlak />
             </Link>
