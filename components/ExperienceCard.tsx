@@ -28,8 +28,8 @@ const ExperienceCard = ({
   link,
 }: Props) => {
   return (
-    <article className="flex flex-col rounded-lg items-left lg:items-center mb-5 md:mb-10 space-y-7 flex-shrink-0 mt-20 w-[400px] md:w-[900px] snap-start lg:snap-center bg-[#303030] hover:bg-[#5F9DF7]/20 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
-      <motion.div
+    <article className="flex flex-col rounded-lg items-left mb-5 md:mb-10 space-y-7 flex-shrink-0 mt-20 w-[400px] md:w-[900px] snap-start lg:snap-center bg-[#303030] hover:bg-[#5F9DF7]/20 p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+      {/* <motion.div
         initial={{
           x: 100,
           opacity: 0,
@@ -51,13 +51,13 @@ const ExperienceCard = ({
           height={70}
           draggable={false}
         />
-      </motion.div>
+      </motion.div> */}
 
       <div className="px-0 md:px-10">
         <h4 className="text-sm font-light">{title}</h4>
         <Link href={link}>
           <a target="_blank" rel="noreferrer">
-            <p className="font-bold text-md mt-1 flex underline decoration-[#5F9DF7]">
+            <p className="font-bold text-md mt-1 flex hover:underline hover:decoration-[#5F9DF7] hover:bg-[#5F9DF7]/40">
               {company}
               <IconContext.Provider
                 value={{ size: "2.0rem", className: "text-[#5F9DF7]" }}>
