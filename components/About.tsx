@@ -52,7 +52,7 @@ const About = (props: Props) => {
         <p className="text-sm">
           Driven focusly as Software Engineer. In general, i am a (MERN) Full
           Stack Developer while able to build a software in various Stack Tools.
-          Througout this years i've built and contributed to several projects
+          Througout this years i have built and contributed to several projects
           both in a teams and personal environment.
         </p>
       </div>
