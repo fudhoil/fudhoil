@@ -18,6 +18,10 @@ import {
   SiVercel,
   SiGithub,
   SiGitlab,
+  SiTypescript,
+  SiBootstrap,
+  SiFirebase,
+  SiGooglecloud,
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
@@ -49,14 +53,18 @@ const Skills = (props: Props) => {
         <Skill directionLeft={true} component={<SiAndroid />} />
         <Skill directionLeft={true} component={<SiGithub />} />
         <Skill directionLeft={true} component={<TbBrandReactNative />} />
-        <Skill directionLeft={false} component={<SiPhp />} />
-        <Skill directionLeft={false} component={<SiTailwindcss />} />
-        <Skill directionLeft={false} component={<SiPostgresql />} />
+        <Skill directionLeft={true} component={<SiPhp />} />
+        <Skill directionLeft={true} component={<SiTailwindcss />} />
+        <Skill directionLeft={true} component={<SiPostgresql />} />
         <Skill directionLeft={false} component={<SiGit />} />
         <Skill directionLeft={false} component={<SiGitlab />} />
+        <Skill directionLeft={false} component={<SiBootstrap />} />
+        <Skill directionLeft={false} component={<SiGooglecloud />} />
         <Skill directionLeft={false} component={<TbBrandNextjs />} />
         <Skill directionLeft={false} component={<SiMysql />} />
+        <Skill directionLeft={false} component={<SiTypescript />} />
         <Skill directionLeft={false} component={<SiApollographql />} />
+        <Skill directionLeft={false} component={<SiFirebase />} />
         <Skill directionLeft={false} component={<SiGraphql />} />
         <Skill directionLeft={false} component={<SiSqlite />} />
       </div>
