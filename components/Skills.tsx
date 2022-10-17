@@ -13,7 +13,6 @@ import {
   SiGit,
   SiApollographql,
   SiGraphql,
-  SiSqlite,
   SiTailwindcss,
   SiVercel,
   SiGithub,
@@ -22,6 +21,8 @@ import {
   SiBootstrap,
   SiFirebase,
   SiGooglecloud,
+  SiRedux,
+  SiDirectus,
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
@@ -43,30 +44,127 @@ const Skills = (props: Props) => {
         Full Stack Developer Hardskils
       </h3>
 
-      <div className="grid grid-cols-4 md:grid-cols-6 gap-5">
-        <Skill directionLeft={true} component={<FaNodeJs />} />
-        <Skill directionLeft={true} component={<SiLaravel />} />
-        <Skill directionLeft={true} component={<SiJavascript />} />
-        <Skill directionLeft={true} component={<SiReact />} />
-        <Skill directionLeft={true} component={<SiMongodb />} />
-        <Skill directionLeft={true} component={<SiVercel />} />
-        <Skill directionLeft={true} component={<SiAndroid />} />
-        <Skill directionLeft={true} component={<SiGithub />} />
-        <Skill directionLeft={true} component={<TbBrandReactNative />} />
-        <Skill directionLeft={true} component={<SiPhp />} />
-        <Skill directionLeft={true} component={<SiTailwindcss />} />
-        <Skill directionLeft={true} component={<SiPostgresql />} />
-        <Skill directionLeft={false} component={<SiGit />} />
-        <Skill directionLeft={false} component={<SiGitlab />} />
-        <Skill directionLeft={false} component={<SiBootstrap />} />
-        <Skill directionLeft={false} component={<SiGooglecloud />} />
-        <Skill directionLeft={false} component={<TbBrandNextjs />} />
-        <Skill directionLeft={false} component={<SiMysql />} />
-        <Skill directionLeft={false} component={<SiTypescript />} />
-        <Skill directionLeft={false} component={<SiApollographql />} />
-        <Skill directionLeft={false} component={<SiFirebase />} />
-        <Skill directionLeft={false} component={<SiGraphql />} />
-        <Skill directionLeft={false} component={<SiSqlite />} />
+      <div className="grid grid-cols-6 gap-5">
+        <Skill
+          directionLeft={true}
+          component={<FaNodeJs />}
+          link={"https://nodejs.org/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiLaravel />}
+          link={"https://laravel.com/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiJavascript />}
+          link={"https://www.javascript.com/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiReact />}
+          link={"https://reactjs.org/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiMongodb />}
+          link={"https://www.mongodb.com/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiVercel />}
+          link={"https://www.vercel.com/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiAndroid />}
+          link={"https://www.android.com/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiGithub />}
+          link={"https://www.github.com/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<TbBrandReactNative />}
+          link={"https://reactnative.dev/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiPhp />}
+          link={"https://www.php.net/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiTailwindcss />}
+          link={"https://tailwindcss.com/"}
+        />
+        <Skill
+          directionLeft={true}
+          component={<SiPostgresql />}
+          link={"https://www.postgresql.org/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiGit />}
+          link={"https://git-scm.com/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiGitlab />}
+          link={"https://about.gitlab.com/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiBootstrap />}
+          link={"https://getbootstrap.com/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiGooglecloud />}
+          link={"https://cloud.google.com/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<TbBrandNextjs />}
+          link={"https://nextjs.org/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiMysql />}
+          link={"https://www.mysql.com/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiRedux />}
+          link={"https://redux.js.org/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiTypescript />}
+          link={"https://www.typescriptlang.org/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiApollographql />}
+          link={"https://www.apollographql.com/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiDirectus />}
+          link={"https://directus.io/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiFirebase />}
+          link={"https://firebase.google.com/"}
+        />
+        <Skill
+          directionLeft={false}
+          component={<SiGraphql />}
+          link={"https://graphql.org/"}
+        />
       </div>
     </motion.div>
   );
