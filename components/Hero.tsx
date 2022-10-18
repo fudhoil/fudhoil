@@ -9,13 +9,13 @@ type Props = {};
 const Hero = (props: Props) => {
   const [text, counter, backspace] = useTypewriter({
     words: [
-      "Hi, The Name's Fudhoil",
+      "hello world, The Name's Fudhoil",
       "guy-who-loves-Code.tsx",
       "stack-overflow-Addict.tsx",
     ],
     loop: true,
     delaySpeed: 2000,
-    deleteSpeed: 50,
+    deleteSpeed: 40,
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
@@ -29,7 +29,7 @@ const Hero = (props: Props) => {
         draggable={false}
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 mx-4 tracking-[15px] pointer-events-none">
+        <h2 className="text-sm uppercase text-gray-500 pb-2 mx-5 tracking-[15px] pointer-events-none">
           Software Engineer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10 pointer-events-none">
@@ -37,7 +37,7 @@ const Hero = (props: Props) => {
           <Cursor cursorColor="#5F9DF7" />
         </h1>
 
-        <div className="pt-5 space-x-2">
+        <div className="pt-5 space-x-2 space-y-2">
           <Link href={"#about"}>
             <button className="heroButton">About</button>
           </Link>
