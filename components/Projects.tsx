@@ -45,7 +45,7 @@ const Projects = (props: Props) => {
         "https://ik.imagekit.io/4iquqthi3/qrcode_UQ0XtwVvP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665820428646",
       title: "React Native App for UGM International Forum",
       description:
-        "QR Code Scanner (only for this event) is a mobile app using React Native that allows users to scan QR Code and get the data from the QR Code and integrated to database. Data from the QR Code is used to check-in the user. All data from the QR Code is encrypted securely. This app is the only app that can decrypt the data from the QR Code.",
+        "QR Code Scanner (only for this event) is a mobile app using React Native that allows users to scan QR Code and get the data from the QR Code and integrated to database. All data from the QR Code is encrypted securely data can be decrypt using this app.",
     },
     {
       image:
@@ -81,11 +81,11 @@ const Projects = (props: Props) => {
 
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 top-[6%] md:top-[10%]">
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 md:top-[10%]">
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-7 pt-20 md:p-44 md:pb-2 h-screen">
+            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-7 pb-0 md:p-44 md:pb-2 h-screen">
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.5 }}
