@@ -81,11 +81,11 @@ const Projects = (props: Props) => {
 
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 md:top-[10%]">
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 top-[6%] md:top-[10%]">
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-20 md:p-44 md:pb-2 h-screen">
+            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-7 pt-20 md:p-44 md:pb-2 h-screen">
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.5 }}
@@ -101,7 +101,7 @@ const Projects = (props: Props) => {
               />
             </motion.div>
 
-            <div className="space-y-5 px-1 md:px-10 max-w-6xl">
+            <div className="space-y-5 px-0 md:px-10 max-w-6xl">
               <h4 className="text-xl font-semibold text-center">
                 <span className="underline decoration-[#5F9DF7]/50">
                   Case Study {i + 1} of {projects.length}:
@@ -109,7 +109,7 @@ const Projects = (props: Props) => {
                 {project.title}
               </h4>
 
-              <p className="text-sm text-center md:text-left max-w-2xl">
+              <p className="text-sm text-center md:text-left max-w-3xl">
                 {project.description}
               </p>
             </div>

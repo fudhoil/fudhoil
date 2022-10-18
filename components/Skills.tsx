@@ -44,7 +44,7 @@ const Skills = (props: Props) => {
         Full Stack Developer Hardskils
       </h3>
 
-      <div className="grid grid-cols-6 gap-5">
+      <div className="grid grid-cols-5 md:grid-cols-6 gap-5">
         <Skill
           directionLeft={true}
           component={<FaNodeJs />}

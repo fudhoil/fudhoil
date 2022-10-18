@@ -1,3 +1,4 @@
+import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
@@ -12,7 +13,7 @@ import { SiHurriyetemlak } from "react-icons/si";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-gradient-to-b from-[#240046] via-[#020405] to-[#161a1d] text-white h-screen snap-y snap-mandatory overflow-x-hidden md:overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 select-none scroll-smooth">
+    <div className="bg-gradient-to-b from-[#240046] via-[#020405] to-[#020405] text-white h-screen snap-y snap-mandatory overflow-x-hidden md:overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5F9DF7]/80 select-none scroll-smooth">
       <Head>
         <title>Fudhoil</title>
       </Head>
