@@ -50,14 +50,14 @@ const Projects = (props: Props) => {
     {
       image:
         "https://ik.imagekit.io/4iquqthi3/mcn-ss_9IyNnD4XN.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737409",
-      title: "Magitra Citra Nusantara (MCN) Website",
+      title: "Magitha Citra Nusantara (MCN) Website",
       description:
         "Magitra Citra Nusantara (MCN) is a web application that allows users to explore the company and its products. Users can also contact the company.",
     },
     {
       image:
         "https://ik.imagekit.io/4iquqthi3/wwc_91QVD0Js9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665821134480",
-      title: "World Wide Community (WWC) Website",
+      title: "World Waterfowl Conference (WWC) Website",
       description:
         "World Wide Community (WWC) is a web application that allows users to explore the event and its details. Users can also register for the event.",
     },
