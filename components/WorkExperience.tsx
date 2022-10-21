@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 import {
@@ -22,17 +22,11 @@ import {
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
 
-type Props = {};
+type Props = {
+  text: string;
+};
 
 const WorkExperience = (props: Props) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth <= 768) {
-      setIsMobile(true);
-    }
-  }, []);
-
   const experience = [
     {
       image:
@@ -98,13 +92,13 @@ const WorkExperience = (props: Props) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
+      transition={{ duration: 1.5 }}
       className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl  text-center z-30">
         Work Experience
         <p>
           <span className="text-sm text-[#5F9DF7] tracking-[3px]">
-            {(isMobile && "Swipe to see more") || "hold shift & scroll"}
+            {props.text}
           </span>
         </p>
       </h3>

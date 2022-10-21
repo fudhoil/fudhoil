@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { DiReact } from "react-icons/di";
 import { IconContext } from "react-icons";
 
-type Props = {};
+type Props = {
+  text: string;
+};
 
 const Projects = (props: Props) => {
-  const [phoneScreen, setPhoneScreen] = React.useState(true);
   const projects = [
     {
       image:
         "https://ik.imagekit.io/4iquqthi3/sahabatmuseum_WRHjOZDrF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737611",
       title: "Sahabat Museum",
+      id: "sahabat-museum",
       description:
         "Sahabat Museum is a web application that allows users to explore museums in Kota Bandung. Users can also book a ticket for a tour of museums.",
       link: "https://sahabatmuseum.com/",
@@ -21,6 +23,7 @@ const Projects = (props: Props) => {
       image:
         "https://ik.imagekit.io/4iquqthi3/react-amazon_CficiHbdr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665820014334",
       title: "React Amazon Clone",
+      id: "react-amazon-clone",
       description:
         "Amazon Clone is a web application that allows users to explore products and add them to the cart. Users can also checkout the products in the cart.",
       link: "https://reactamazon.vercel.com/",
@@ -29,6 +32,7 @@ const Projects = (props: Props) => {
       image:
         "https://ik.imagekit.io/4iquqthi3/ss_Proxsis_web_IzbyLjaNi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737216",
       title: "Proxsis Web",
+      id: "proxsis-web",
       description:
         "Proxsis Web is a web application for Human Resources Management. This application is used to manage employee data, attendance, and payroll.",
     },
@@ -36,6 +40,7 @@ const Projects = (props: Props) => {
       image:
         "https://ik.imagekit.io/4iquqthi3/react-admin-ugm_0nqfAkco-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665819859567",
       title: "React Admin Dashboard for UGM International Forum",
+      id: "react-admin-ugm",
       description:
         "Admin Dashboard is a web application that allows users to manage Submitted paper and Registered data from user.",
       link: "https://react-admin-ugm.vercel.app/",
@@ -44,6 +49,7 @@ const Projects = (props: Props) => {
       image:
         "https://ik.imagekit.io/4iquqthi3/qrcode_UQ0XtwVvP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665820428646",
       title: "React Native App for UGM International Forum",
+      id: "react-native-ugm",
       description:
         "QR Code Scanner (only for this event) is a mobile app using React Native that allows users to scan QR Code and get the data from the QR Code and integrated to database. All data from the QR Code is encrypted securely data can be decrypt using this app.",
     },
@@ -51,6 +57,7 @@ const Projects = (props: Props) => {
       image:
         "https://ik.imagekit.io/4iquqthi3/mcn-ss_9IyNnD4XN.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665742737409",
       title: "Magitha Citra Nusantara (MCN) Website",
+      id: "mcn-web",
       description:
         "Magitra Citra Nusantara (MCN) is a web application that allows users to explore the company and its products. Users can also contact the company.",
     },
@@ -58,23 +65,19 @@ const Projects = (props: Props) => {
       image:
         "https://ik.imagekit.io/4iquqthi3/wwc_91QVD0Js9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665821134480",
       title: "World Waterfowl Conference (WWC) Website",
+      id: "wwc-web",
       description:
         "World Wide Community (WWC) is a web application that allows users to explore the event and its details. Users can also register for the event.",
     },
   ];
 
-  useEffect(() => {
-    if (window.innerWidth > 768) {
-      setPhoneScreen(false);
-    }
-  }, []);
   return (
     <div className="h-screen pb-14 md:pb-32 relative flex overflow-visible flex-col md:flex-row text-left max-w-full justify-evenly mx-auto items-center z-0">
       <h3 className="absolute flex flex-col top-24 uppercase tracking-[20px] text-gray-500 text-2xl items-center">
         Projects
         <p>
           <span className="text-sm text-[#5F9DF7] tracking-[3px]">
-            {(phoneScreen && "Swipe to see more") || "hold shift & scroll"}
+            {props.text}
           </span>
         </p>
       </h3>
@@ -85,7 +88,8 @@ const Projects = (props: Props) => {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-7 pb-0 md:p-44 md:pb-2 h-screen">
+            id={project.id}
+            className="scroll w-screen flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-7 pb-0 md:p-44 md:pb-2 h-screen">
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.5 }}
