@@ -22,7 +22,7 @@ const Hero = (props: Props) => {
       <BackgroundCircles />
       <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://media-exp1.licdn.com/dms/image/C4D03AQF-qbulAQuChQ/profile-displayphoto-shrink_800_800/0/1619186868523?e=1671062400&v=beta&t=GNl6dOVIWMtTaRT7BbDqNIQaukvANc5hLpOktscuEEI"
+        src="https://media-exp1.licdn.com/dms/image/D5603AQHx0Y6Ux1Ipgw/profile-displayphoto-shrink_800_800/0/1667469046205?e=1672876800&v=beta&t=BuAnLL259XOxCBMcniC-B-rXjEolDcW1vA7Iqfz_Ml0"
         alt=""
         width={200}
         height={200}

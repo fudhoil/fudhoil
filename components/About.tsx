@@ -35,7 +35,7 @@ const About = (props: Props) => {
           opacity: 1,
         }}>
         <Image
-          src="https://media-exp1.licdn.com/dms/image/C4D03AQF-qbulAQuChQ/profile-displayphoto-shrink_800_800/0/1619186868523?e=1671062400&v=beta&t=GNl6dOVIWMtTaRT7BbDqNIQaukvANc5hLpOktscuEEI"
+          src="https://media-exp1.licdn.com/dms/image/D5603AQHx0Y6Ux1Ipgw/profile-displayphoto-shrink_800_800/0/1667469046205?e=1672876800&v=beta&t=BuAnLL259XOxCBMcniC-B-rXjEolDcW1vA7Iqfz_Ml0"
           className="mt-20 md:mt-10 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-58 md:h-90 xl:w-[300px] xl:h-[300px]"
           alt=""
           width={phoneScreen ? 200 : 300}
