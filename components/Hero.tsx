@@ -8,11 +8,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const [text, counter, backspace] = useTypewriter({
-    words: [
-      "helloWorld; name-> Fudhoil()",
-      "guy-who-loves-Code.tsx",
-      "stack-overflow-Addict.tsx",
-    ],
+    words: ["name: Fudhoil"],
     loop: true,
     delaySpeed: 2000,
     deleteSpeed: 40,
