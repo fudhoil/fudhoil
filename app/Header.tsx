@@ -25,7 +25,6 @@ const Header = (props: Props) => {
       <Link
         href="/"
         style={{
-          color: "#ffffff",
           marginLeft: "auto",
           fontFamily: "Alaska, sans-serif",
           fontSize: "1.5rem",
@@ -34,7 +33,8 @@ const Header = (props: Props) => {
           alignItems: "center",
           textDecoration: path === "/" ? "underline #f9e2b8" : "none",
         }}
-        className="text-[#f9e2b8] hover:text-[#fff]">
+        className="text-[#ffff] hover:text-[#fff]"
+        onClick={() => setPath("/")}>
         home
       </Link>
       <Link
@@ -46,9 +46,10 @@ const Header = (props: Props) => {
           fontWeight: "900",
           display: "flex",
           alignItems: "center",
-          textDecoration: path === "/project" ? "underline #f9e2b8" : "none",
+          textDecoration: path === "/projects" ? "underline #f9e2b8" : "none",
         }}
-        className="text-[#f9e2b8] hover:text-[#fff]">
+        className="text-[#ffff] hover:text-[#fff]"
+        onClick={() => setPath("/projects")}>
         projects
       </Link>
     </div>
