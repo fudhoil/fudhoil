@@ -28,20 +28,18 @@ export default function RootLayout({
               width: "30%",
               backgroundColor: "#222222",
               display: "flex",
+              overflow: "hidden",
             }}>
             <h1
               style={{
                 writingMode: "vertical-rl",
-                margin: "auto",
                 fontWeight: "900",
-                fontSize: "10vw",
+                mixBlendMode: "difference",
+                fontSize: "calc(3rem + 3vw)",
+                margin: "1rem auto",
+                justifyContent: "center",
               }}>
-              <span
-                style={{
-                  mixBlendMode: "difference",
-                }}>
-                Software Engineer
-              </span>
+              Software Engineer
             </h1>
           </div>
           <div
