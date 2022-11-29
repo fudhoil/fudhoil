@@ -7,7 +7,7 @@ import Image from "next/image";
 type Props = {};
 
 const Hero = (props: Props) => {
-  const [text, counter, backspace] = useTypewriter({
+  const [text, counter] = useTypewriter({
     words: ["name: Fudhoil"],
     loop: true,
     delaySpeed: 2000,
