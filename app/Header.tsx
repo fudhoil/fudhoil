@@ -27,30 +27,30 @@ const Header = (props: Props) => {
         style={{
           color: "#ffffff",
           marginLeft: "auto",
-          marginRight: "auto",
           fontFamily: "Alaska, sans-serif",
           fontSize: "1.5rem",
           fontWeight: "900",
           display: "flex",
           alignItems: "center",
           textDecoration: path === "/" ? "underline #f9e2b8" : "none",
-        }}>
+        }}
+        className="text-[#f9e2b8] hover:text-[#fff]">
         home
       </Link>
-      {/* <Link
-        href="/about"
+      <Link
+        href="/projects"
         style={{
-          textDecoration: "none",
-          color: "#f9e2b8",
           marginRight: "auto",
           fontFamily: "Alaska, sans-serif",
           fontSize: "1.5rem",
           fontWeight: "900",
           display: "flex",
           alignItems: "center",
-        }}>
-        about
-      </Link> */}
+          textDecoration: path === "/project" ? "underline #f9e2b8" : "none",
+        }}
+        className="text-[#f9e2b8] hover:text-[#fff]">
+        projects
+      </Link>
     </div>
   );
 };

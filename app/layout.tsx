@@ -1,6 +1,7 @@
 import Head from "./head";
 import Header from "./Header";
 import "../styles/globals.css";
+import Image from "next/image";
 
 export default function RootLayout({
   children,
@@ -29,6 +30,7 @@ export default function RootLayout({
               height: "100%",
               backgroundColor: "#c29adc",
               display: "flex",
+              flexDirection: "column",
               overflow: "hidden",
               top: "0",
               left: "0",
@@ -46,6 +48,25 @@ export default function RootLayout({
               }}>
               Software Engineer
             </h1>
+            {/* <div
+              style={{
+                display: "relative",
+                width: "100%",
+                height: "100%",
+                overflow: "hidden",
+                zIndex: 1,
+              }}>
+              <Image
+                src={
+                  "https://ik.imagekit.io/4iquqthi3/Copy_of_Fudho_LIKDs2KyQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669743751825"
+                }
+                width={100}
+                height={100}
+                layout="responsive"
+                objectFit="contain"
+                alt="logo"
+              />
+            </div> */}
           </div>
           <div
             style={{

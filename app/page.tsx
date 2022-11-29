@@ -26,7 +26,7 @@ const Home = () => {
       }}>
       <main
         style={{
-          height: "120vh",
+          height: "100%",
         }}>
         <div
           style={{
