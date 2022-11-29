@@ -35,11 +35,16 @@ const Home = () => {
           bottom: isMobile ? "0" : "auto",
           zIndex: 1,
           backgroundColor: isMobile ? "#f9e2b8" : "transparent",
+          fontFamily: "Alaska, sans-serif",
+          color: "#222222",
+          fontSize: "1rem",
+          lineHeight: "1.5rem",
         }}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-        blanditiis architecto commodi dolorum nihil, tempora illum. Similique,
-        temporibus. Itaque, animi odit voluptates minus repellendus deleniti
-        doloremque exercitationem consequatur impedit nemo?
+        <strong>Driven</strong> focusly as <strong>Software Engineer</strong>.
+        In general, i am a (MERN) Full Stack Developer while able to build a
+        software in various Stack Tools. Througout this years i have built and
+        contributed to several projects both in a teams and personal
+        environment.
       </div>
       <div
         style={{
