@@ -1,4 +1,5 @@
 import React from "react";
+import { useTypewriter } from "react-simple-typewriter";
 
 type Props = {};
 
