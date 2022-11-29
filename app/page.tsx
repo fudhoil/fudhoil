@@ -61,7 +61,7 @@ const Home = () => {
             position: "absolute",
             bottom: "5rem",
             left: "-6rem",
-            fontSize: "5.5rem",
+            fontSize: isMobile ? "3.7rem" : "6rem",
             fontWeight: "900",
             fontFamily: "Alaska, sans-serif",
             color: "#f9e2b8",
