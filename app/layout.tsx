@@ -23,19 +23,18 @@ export default function RootLayout({
           <div
             style={{
               fontFamily: "Alaska, sans-serif",
-              fontSize: "3rem",
-              fontWeight: "900",
               color: "#f9e2b8",
               height: "100vh",
               width: "30%",
               backgroundColor: "#222222",
-              display: "grid",
-              placeItems: "center",
+              display: "flex",
             }}>
             <h1
               style={{
                 writingMode: "vertical-rl",
-                margin: "1rem",
+                margin: "auto",
+                fontWeight: "900",
+                fontSize: "10vw",
               }}>
               <span
                 style={{

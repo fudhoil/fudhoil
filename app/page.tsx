@@ -67,7 +67,7 @@ const Home = () => {
             color: "#f9e2b8",
             mixBlendMode: "difference",
           }}>
-          Fudhoil
+          fudhoil
         </div>
       </div>
     </div>
