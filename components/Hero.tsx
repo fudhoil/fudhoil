@@ -3,6 +3,12 @@ import React from "react";
 type Props = {};
 
 const Hero = (props: Props) => {
+  const [text, counter] = useTypewriter({
+    words: ["name: Fudhoil"],
+    loop: true,
+    delaySpeed: 2000,
+    deleteSpeed: 40,
+  });
   return (
     <div className="h-screen flex flex-col items-center justify-center text-center overflow-hidden">
       <div className="bg-[#222222] w-[30%] h-screen fixed left-0">
