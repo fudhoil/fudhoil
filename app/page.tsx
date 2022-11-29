@@ -30,7 +30,7 @@ const Home = () => {
         }}>
         <div
           style={{
-            margin: "1rem",
+            marginTop: isMobile ? "0" : "1rem",
             display: "flex",
             marginLeft: "auto",
             maxWidth: "50%",
@@ -62,7 +62,8 @@ const Home = () => {
             position: isMobile ? "relative" : "absolute",
             top: isMobile ? "auto" : "3rem",
             border: "2px solid white",
-            margin: "1rem",
+            margin: "1rem 0",
+            marginLeft: "1rem",
             padding: "1rem",
             maxWidth: isMobile ? "100%" : "30%",
             height: isMobile ? "18rem" : "auto",
