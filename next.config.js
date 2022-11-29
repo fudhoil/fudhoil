@@ -9,6 +9,9 @@ const nextConfig = {
       "ik.imagekit.io",
     ],
   },
+  experimental: {
+    appDir: true,
+  }
 };
 
 module.exports = nextConfig;
