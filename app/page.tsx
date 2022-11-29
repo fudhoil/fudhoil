@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 const Home = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -27,10 +28,11 @@ const Home = () => {
       <main
         style={{
           height: "100%",
+          marginRight: isMobile ? "1rem" : "auto",
         }}>
         <div
           style={{
-            marginTop: isMobile ? "0" : "1rem",
+            marginTop: "1rem",
             display: "flex",
             marginLeft: "auto",
             maxWidth: "50%",
@@ -43,11 +45,32 @@ const Home = () => {
             objectFit="cover"
             alt="me"
           />
+          <SocialIcon
+            url="https://www.linkedin.com/in/fudhoil"
+            target={"_blank"}
+            fgColor="#c29adc"
+            bgColor="transparent"
+            className="hover:bg-[#061d47]"
+          />
+          <SocialIcon
+            url="https://instagram.com/_fudhoil"
+            target={"_blank"}
+            fgColor="#c29adc"
+            bgColor="transparent"
+            className="hover:bg-[#061d47]"
+          />
+          <SocialIcon
+            url="https://github.com/fudhoil"
+            target={"_blank"}
+            fgColor="#c29adc"
+            bgColor="transparent"
+            className="hover:bg-[#061d47]"
+          />
           <div
             style={{
               position: "absolute",
               bottom: "5rem",
-              left: "-6rem",
+              left: "-6.7rem",
               fontSize: isMobile ? "3.7rem" : "6rem",
               fontWeight: "900",
               fontFamily: "Alaska, sans-serif",
