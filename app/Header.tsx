@@ -13,18 +13,19 @@ const Header = (props: Props) => {
   return (
     <div
       style={{
+        position: "absolute",
         top: "0",
-        width: "100%",
+        width: "70%",
         height: "3rem",
         display: "flex",
         gap: "1rem",
-        backgroundColor: "#222222",
-        zIndex: 1,
+        backgroundColor: "#c29adc",
+        zIndex: 2,
       }}>
       <Link
         href="/"
         style={{
-          color: "#f9e2b8",
+          color: "#ffffff",
           marginLeft: "auto",
           marginRight: "auto",
           fontFamily: "Alaska, sans-serif",

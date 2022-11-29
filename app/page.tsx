@@ -22,59 +22,65 @@ const Home = () => {
     <div
       style={{
         overflow: "hidden",
+        height: "100%",
       }}>
-      <div
+      <main
         style={{
-          position: "absolute",
-          border: "2px solid white",
-          margin: "1rem",
-          padding: "1rem",
-          maxWidth: isMobile ? "100%" : "30%",
-          height: isMobile ? "5rem" : "auto",
-          overflow: isMobile ? "scroll" : "hidden",
-          bottom: isMobile ? "0" : "auto",
-          zIndex: 1,
-          backgroundColor: isMobile ? "#f9e2b8" : "transparent",
-          fontFamily: "Alaska, sans-serif",
-          color: "#222222",
-          fontSize: "1rem",
-          lineHeight: "1.5rem",
+          height: "120vh",
         }}>
-        <strong>Driven</strong> focusly as <strong>Software Engineer</strong>.
-        In general, i am a (MERN) Full Stack Developer while able to build a
-        software in various Stack Tools. Througout this years i have built and
-        contributed to several projects both in a teams and personal
-        environment.
-      </div>
-      <div
-        style={{
-          margin: "1rem",
-          display: "flex",
-          marginLeft: "auto",
-          maxWidth: "50%",
-          position: "relative",
-          height: "80vh",
-        }}>
-        <Image
-          src="https://ik.imagekit.io/4iquqthi3/me_qjrtT7Vr9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669726026924"
-          layout="fill"
-          objectFit="cover"
-          alt="me"
-        />
         <div
           style={{
-            position: "absolute",
-            bottom: "5rem",
-            left: "-6rem",
-            fontSize: isMobile ? "3.7rem" : "6rem",
-            fontWeight: "900",
-            fontFamily: "Alaska, sans-serif",
-            color: "#f9e2b8",
-            mixBlendMode: "difference",
+            margin: "1rem",
+            display: "flex",
+            marginLeft: "auto",
+            maxWidth: "50%",
+            position: "relative",
+            height: "80vh",
           }}>
-          fudhoil
+          <Image
+            src="https://ik.imagekit.io/4iquqthi3/me_qjrtT7Vr9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669726026924"
+            layout="fill"
+            objectFit="cover"
+            alt="me"
+          />
+          <div
+            style={{
+              position: "absolute",
+              bottom: "5rem",
+              left: "-6rem",
+              fontSize: isMobile ? "3.7rem" : "6rem",
+              fontWeight: "900",
+              fontFamily: "Alaska, sans-serif",
+              color: "#ffffff",
+              mixBlendMode: "difference",
+            }}>
+            Fudhoil
+          </div>
         </div>
-      </div>
+        <div
+          style={{
+            position: isMobile ? "relative" : "absolute",
+            top: isMobile ? "auto" : "3rem",
+            border: "2px solid white",
+            margin: "1rem",
+            padding: "1rem",
+            maxWidth: isMobile ? "100%" : "30%",
+            height: isMobile ? "18rem" : "auto",
+            overflow: isMobile ? "scroll" : "hidden",
+            zIndex: 1,
+            backgroundColor: isMobile ? "#f9e2b8" : "transparent",
+            fontFamily: "Alaska, sans-serif",
+            color: "#222222",
+            fontSize: "1rem",
+            lineHeight: "1.5rem",
+          }}>
+          <strong>Driven</strong> focusly as <strong>Software Engineer</strong>.
+          In general, i am a (MERN) Full Stack Developer while able to build a
+          software in various Stack Tools. Througout this years i have built and
+          contributed to several projects both in a teams and personal
+          environment.
+        </div>
+      </main>
     </div>
   );
 };

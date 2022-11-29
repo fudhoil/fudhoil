@@ -1,5 +1,6 @@
 import Head from "./head";
 import Header from "./Header";
+import "../styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -16,27 +17,31 @@ export default function RootLayout({
         }}>
         <main
           style={{
-            backgroundColor: "#f9e2b8",
             height: "100vh",
             display: "flex",
-          }}>
+          }}
+          className="bg-[#f9e2b8]">
           <div
             style={{
               fontFamily: "Alaska, sans-serif",
               color: "#f9e2b8",
-              height: "100vh",
               width: "30%",
-              backgroundColor: "#222222",
+              height: "100%",
+              backgroundColor: "#c29adc",
               display: "flex",
               overflow: "hidden",
+              top: "0",
+              left: "0",
+              bottom: "0",
             }}>
             <h1
               style={{
                 writingMode: "vertical-rl",
                 fontWeight: "900",
-                mixBlendMode: "difference",
+                // mixBlendMode: "difference",
+                color: "#ffffff",
                 fontSize: "calc(3rem + 3vw)",
-                margin: "1rem auto",
+                margin: "3rem auto",
                 justifyContent: "center",
               }}>
               Software Engineer
@@ -46,11 +51,18 @@ export default function RootLayout({
             style={{
               display: "flex",
               flexDirection: "column",
-              height: "100vh",
+              height: "100%",
               width: "70%",
-            }}>
+              overflow: "scroll",
+            }}
+            className="scrollbar scrollbar-thumb-[#c29adc]">
             <Header />
-            {children}
+            <div
+              style={{
+                marginTop: "3rem",
+              }}>
+              {children}
+            </div>
           </div>
         </main>
       </body>
