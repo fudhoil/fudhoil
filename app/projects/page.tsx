@@ -74,25 +74,24 @@ const Home = () => {
     }
   };
 
+  const handleScroll = (evt: WheelEvent) => {
+    evt.preventDefault();
+    document.querySelector(".projects")?.scrollBy({
+      left: evt.deltaY,
+    });
+  };
+
   React.useEffect(() => {
     handleResize();
     window.addEventListener("scroll", handleResize);
-    document.querySelector(".projects")?.addEventListener("wheel", (evt) => {
-      evt.preventDefault();
-      document.querySelector(".projects")?.scrollBy({
-        left: evt.deltaY,
-      });
-    });
+    document
+      .querySelector(".projects")
+      ?.addEventListener("wheel", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleResize);
       document
-        .querySelector(".projects")?
-        .removeEventListener("wheel", (evt) => {
-          evt.preventDefault();
-          document.querySelector(".projects")!.scrollBy({
-            left: evt.deltaY,
-          });
-        });
+        .querySelector(".projects")
+        ?.removeEventListener("wheel", handleScroll);
     };
   }, []);
   return (
