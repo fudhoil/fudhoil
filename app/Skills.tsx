@@ -36,10 +36,9 @@ const Skills = (props: Props) => {
         height: "100%",
       }}>
       <h3
-        className="text-[#5F9DF7] mb-2"
+        className="text-[#5F9DF7] mb-2 text-[24px] md:text-[32px]"
         style={{
           fontFamily: "Alaska, sans-serif",
-          fontSize: window.innerWidth > 768 ? "2rem" : "1.5rem",
           fontWeight: "900",
           lineHeight: "1.2",
         }}>
