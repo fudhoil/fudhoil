@@ -33,7 +33,9 @@ const Header = (props: Props) => {
           alignItems: "center",
           textDecoration: path === "/" ? "underline #f9e2b8" : "none",
         }}
-        className="text-[#ffff] hover:text-[#fff]"
+        className={`${
+          path === "/" ? "text-[#fff]" : "text-[#f9e2b8]"
+        } hover:text-[#fff]`}
         onClick={() => setPath("/")}>
         home
       </Link>
@@ -48,7 +50,9 @@ const Header = (props: Props) => {
           alignItems: "center",
           textDecoration: path === "/projects" ? "underline #f9e2b8" : "none",
         }}
-        className="text-[#ffff] hover:text-[#fff]"
+        className={`${
+          path === "/projects" ? "text-[#fff]" : "text-[#f9e2b8]"
+        } hover:text-[#fff]`}
         onClick={() => setPath("/projects")}>
         projects
       </Link>
