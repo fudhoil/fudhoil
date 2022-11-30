@@ -77,16 +77,16 @@ const Home = () => {
   React.useEffect(() => {
     handleResize();
     window.addEventListener("scroll", handleResize);
-    document.querySelector(".projects")!.addEventListener("wheel", (evt) => {
+    document.querySelector(".projects")?.addEventListener("wheel", (evt) => {
       evt.preventDefault();
-      document.querySelector(".projects")!.scrollBy({
+      document.querySelector(".projects")?.scrollBy({
         left: evt.deltaY,
       });
     });
     return () => {
       window.removeEventListener("scroll", handleResize);
       document
-        .querySelector(".projects")!
+        .querySelector(".projects")?
         .removeEventListener("wheel", (evt) => {
           evt.preventDefault();
           document.querySelector(".projects")!.scrollBy({
