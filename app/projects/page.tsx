@@ -73,10 +73,10 @@ const Home = () => {
       setIsMobile(false);
     }
   };
-
+  const scrollY = document.querySelector(".projects");
   const handleScroll = (evt: WheelEvent) => {
     evt.preventDefault();
-    document.querySelector(".projects")?.scrollBy({
+    scrollY?.scrollBy({
       left: evt.deltaY,
     });
   };
@@ -84,14 +84,10 @@ const Home = () => {
   React.useEffect(() => {
     handleResize();
     window.addEventListener("scroll", handleResize);
-    document
-      .querySelector(".projects")
-      ?.addEventListener("wheel", handleScroll);
+    scrollY?.addEventListener("wheel", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleResize);
-      document
-        .querySelector(".projects")
-        ?.removeEventListener("wheel", handleScroll);
+      scrollY?.removeEventListener("wheel", handleScroll);
     };
   }, []);
   return (
