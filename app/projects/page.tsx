@@ -87,20 +87,20 @@ const Home = () => {
         marginLeft: "1rem",
       }}>
       <div
-        className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80">
+        className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 space-x-5">
         {projects.map((project, i) => (
           <div
             key={i}
             id={project.id}
-            className="scroll w-full flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center p-14">
+            className="scroll w-full max-w-xl flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center px-14 md:px-0 py-4">
             <div
               style={{
                 position: "relative",
               }}>
               <Image
                 src={project.image}
-                alt="Sahabat Museum"
+                alt="Project Image"
                 width={100}
                 height={100}
                 layout="responsive"
