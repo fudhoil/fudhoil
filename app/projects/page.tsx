@@ -73,10 +73,9 @@ const Projects = () => {
       setIsMobile(false);
     }
   };
-  const scrollY = document.querySelector(".projects");
   const handleScroll = (evt) => {
     evt.preventDefault();
-    scrollY?.scrollBy({
+    document.getElementById("projects")?.scrollBy({
       left: evt.deltaY,
     });
   };
@@ -84,10 +83,10 @@ const Projects = () => {
   React.useEffect(() => {
     handleResize();
     window.addEventListener("scroll", handleResize);
-    scrollY?.addEventListener("wheel", handleScroll);
+    window.addEventListener("wheel", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleResize);
-      scrollY?.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("wheel", handleScroll);
     };
   }, []);
   return (
@@ -99,7 +98,7 @@ const Projects = () => {
       }}>
       <div
         id="projects"
-        className="projects relative w-full flex overflow-x-scroll overflow-y-hidden
+        className="relative w-full flex overflow-x-scroll overflow-y-hidden
       scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 space-x-5">
         {projects.map((project, i) => (
           <div
