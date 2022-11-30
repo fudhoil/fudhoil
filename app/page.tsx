@@ -72,13 +72,14 @@ const Home = () => {
           <div
             style={{
               position: "absolute",
-              bottom: "5rem",
-              left: "-6.7rem",
+              bottom: isMobile ? "7rem" : "0",
+              left: isMobile ? "-6.8rem" : "-4rem",
               fontSize: isMobile ? "3.7rem" : "6rem",
               fontWeight: "900",
               fontFamily: "Alaska, sans-serif",
-              color: "#ffffff",
+              color: isMobile ? "#fff" : "#0b3075",
               mixBlendMode: "difference",
+              writingMode: isMobile ? "horizontal-tb" : "vertical-rl",
             }}>
             Fudhoil
           </div>

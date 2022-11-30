@@ -43,7 +43,7 @@ const Skills = (props: Props) => {
           fontWeight: "900",
           lineHeight: "1.2",
         }}>
-        for sure he understood these icons
+        for sure he understood these stuffs
       </h3>
 
       <div className="grid grid-cols-5 gap-5">
