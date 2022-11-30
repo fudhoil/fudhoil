@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Home = () => {
+const Projects = () => {
   const [isMobile, setIsMobile] = React.useState(false);
   const projects = [
     {
@@ -140,4 +140,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Projects;
