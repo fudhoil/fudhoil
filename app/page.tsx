@@ -93,6 +93,7 @@ const Home = () => {
             margin: "1rem 1rem",
             padding: "1rem",
             width: isMobile ? "93%" : "45%",
+            height: isMobile ? "auto" : "80vh",
             overflowY: "scroll",
             overflowX: "hidden",
             zIndex: 1,
@@ -105,8 +106,6 @@ const Home = () => {
           <IntroComponent />
         </div>
       </div>
-      {/* skills component */}
-      {/* <SkillsComponent /> */}
     </>
   );
 };

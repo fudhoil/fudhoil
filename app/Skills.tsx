@@ -39,11 +39,11 @@ const Skills = (props: Props) => {
         className="text-[#5F9DF7] mb-2"
         style={{
           fontFamily: "Alaska, sans-serif",
-          fontSize: "2rem",
+          fontSize: window.innerWidth > 768 ? "2rem" : "1.5rem",
           fontWeight: "900",
           lineHeight: "1.2",
         }}>
-        he curtainly know these stuff
+        for sure he understood these icons
       </h3>
 
       <div className="grid grid-cols-5 gap-5">
