@@ -74,7 +74,7 @@ const Home = () => {
     }
   };
   const scrollY = document.querySelector(".projects");
-  const handleScroll = (evt: WheelEvent) => {
+  const handleScroll = (evt) => {
     evt.preventDefault();
     scrollY?.scrollBy({
       left: evt.deltaY,
