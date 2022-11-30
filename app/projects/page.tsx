@@ -77,7 +77,23 @@ const Home = () => {
   React.useEffect(() => {
     handleResize();
     window.addEventListener("scroll", handleResize);
-    return () => window.removeEventListener("scroll", handleResize);
+    document.querySelector(".projects")!.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      document.querySelector(".projects")!.scrollBy({
+        left: evt.deltaY,
+      });
+    });
+    return () => {
+      window.removeEventListener("scroll", handleResize);
+      document
+        .querySelector(".projects")!
+        .removeEventListener("wheel", (evt) => {
+          evt.preventDefault();
+          document.querySelector(".projects")!.scrollBy({
+            left: evt.deltaY,
+          });
+        });
+    };
   }, []);
   return (
     <div
@@ -87,13 +103,14 @@ const Home = () => {
         marginLeft: "1rem",
       }}>
       <div
-        className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory
+        id="projects"
+        className="projects relative w-full flex overflow-x-scroll overflow-y-hidden
       scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 space-x-5">
         {projects.map((project, i) => (
           <div
             key={i}
             id={project.id}
-            className="scroll w-full max-w-xl flex-shrink-0 snap-center items-center flex flex-col space-y-3 justify-center px-14 md:px-0 py-4">
+            className="scroll w-full max-w-xl flex-shrink-0 items-center flex flex-col space-y-3 justify-center px-0 md:px-0 py-4">
             <div
               style={{
                 position: "relative",
@@ -109,7 +126,7 @@ const Home = () => {
               />
             </div>
 
-            <div className="space-y-5 px-0 md:px-10 max-w-4xl">
+            <div className="space-y-5 px-0 md:px-10">
               <h4 className="text-xl font-semibold text-center">
                 <span className="underline decoration-[#5F9DF7]/50">
                   Case Study {i + 1} of {projects.length}:
@@ -117,7 +134,7 @@ const Home = () => {
                 {project.title}
               </h4>
 
-              <p className="text-sm text-center md:text-left max-w-xl">
+              <p className="text-sm text-center md:text-left">
                 {project.description}
               </p>
             </div>
