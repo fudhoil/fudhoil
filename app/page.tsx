@@ -85,20 +85,41 @@ const Home = () => {
           marginLeft: "1rem",
           padding: "1rem",
           maxWidth: isMobile ? "100%" : "30%",
-          height: isMobile ? "18rem" : "auto",
-          overflow: isMobile ? "scroll" : "hidden",
+          height: "18rem",
+          overflowY: "scroll",
+          overflowX: "hidden",
           zIndex: 1,
           backgroundColor: isMobile ? "#f9e2b8" : "transparent",
           fontFamily: "Alaska, sans-serif",
           color: "#222222",
           fontSize: "1rem",
           lineHeight: "1.5rem",
-        }}>
-        <strong>Driven</strong> focusly as <strong>Software Engineer</strong>.
-        In general, i am a (MERN) Full Stack Developer while able to build a
-        software in various Stack Tools. Througout this years i have built and
-        contributed to several projects both in a teams and personal
-        environment.
+        }}
+        className="scrollbar scrollbar-thumb-[#c29adc]">
+        <p className="text-justify indent-8 mb-2">
+          <strong>Driven</strong> focusly as <strong>Software Engineer</strong>.
+          In general, i am a (MERN) Full Stack Developer while able to build a
+          software in various Stack Tools. Througout this years i have built and
+          contributed to several projects both in a teams and personal
+          environment.
+        </p>
+        <p className="text-justify indent-8 mb-2">
+          <strong>Experienced</strong> in many projects such as{" "}
+          <strong>PHP</strong>, <strong>Javascript</strong>, and{" "}
+          <strong>Restfull API</strong>
+          has provided me with an in-depth understanding of Web Development
+          Environments, programming and software engineering projects. I am a
+          self-motivated student looking to expand my practical skills in
+          information technology and database/software analysis.
+        </p>
+        <p className="text-justify indent-8">
+          As an enthusiastic and passionate learner, I pursue to learn new
+          things such as teaching and improving knowledge imparting skills,
+          development skill, communicative, and willingness to be{" "}
+          <strong>critical</strong>. Passionate about continuos improvement in
+          several programming languages and frameworks such as NextJs (React),
+          ExpressJs (Node).
+        </p>
       </div>
     </div>
   );
