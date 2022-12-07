@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { Suspense } from "react";
 import { SocialIcon } from "react-social-icons";
 import IntroComponent from "./(components)/IntroComponent";
+import Loading from "./loading";
 // import SkillsComponent from "./SkillsComponent";
 
-const Home = () => {
+const HomePage = () => {
   const [isMobile, setIsMobile] = React.useState(false);
   const [isTablet, setIsTablet] = React.useState(false);
 
@@ -28,7 +29,7 @@ const Home = () => {
     };
   }, []);
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <div
         style={{
           overflow: "hidden",
@@ -111,8 +112,8 @@ const Home = () => {
           <IntroComponent />
         </div>
       </div>
-    </>
+    </Suspense>
   );
 };
 
-export default Home;
+export default HomePage;
