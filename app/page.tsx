@@ -2,17 +2,21 @@
 import Image from "next/image";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import IntroComponent from "./IntroComponent";
+import IntroComponent from "./(components)/IntroComponent";
 // import SkillsComponent from "./SkillsComponent";
 
 const Home = () => {
   const [isMobile, setIsMobile] = React.useState(false);
+  const [isTablet, setIsTablet] = React.useState(false);
 
   const handleResize = () => {
     if (window.innerWidth < 768) {
       setIsMobile(true);
+    } else if (window.innerWidth < 1024) {
+      setIsTablet(true);
     } else {
       setIsMobile(false);
+      setIsTablet(false);
     }
   };
 
@@ -72,14 +76,14 @@ const Home = () => {
           <div
             style={{
               position: "absolute",
-              bottom: isMobile ? "7rem" : "0",
-              left: isMobile ? "-6.8rem" : "-4rem",
+              bottom: isTablet ? "7rem" : "7rem",
+              left: isTablet ? "-6.8rem" : "-3rem",
               fontSize: isMobile ? "3.7rem" : "6rem",
               fontWeight: "900",
               fontFamily: "Alaska, sans-serif",
-              color: isMobile ? "#fff" : "#0b3075",
+              color: "#fff",
               mixBlendMode: "difference",
-              writingMode: isMobile ? "horizontal-tb" : "vertical-rl",
+              // writingMode: isMobile ? "horizontal-tb" : "vertical-rl",
             }}>
             Fudhoil
           </div>
