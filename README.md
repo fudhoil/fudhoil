@@ -1,9 +1,9 @@
-<!-- profile readme -->
+<!-- This is my page -->
 
-# Hi there, I'm [Fudhoil](https://fudhoil.vercel.app) 👋
+## Hi there 👋
 
-I've been a Software Developer since 2021.
+<!-- my website -->
 
-nothing much going on in my open source repo recently (mostly private/gitlab). 
+### [Fudhoil](https://fudhoil.vercel.app)
 
-[![Fudhoil's github stats](https://github-readme-stats.vercel.app/api?username=fudhoil&show_icons=true&theme=radical)](fudhoil.vercel.app)
+Since 2020, I have been actively involved in crafting websites and subsequently embarked on my professional career in 2021 as a full stack developer, primarily focusing on JavaScript and PHP frameworks.
