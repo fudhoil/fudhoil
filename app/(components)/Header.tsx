@@ -42,9 +42,9 @@ const Header = (props: Props) => {
         } hover:text-[#fff]`}
         onClick={() => {
           setPath("/");
-          ref.current.continuousStart();
+          ref?.current?.continuousStart();
           setTimeout(() => {
-            ref.current.complete();
+            ref?.current?.complete();
           }, 1000);
         }}>
         home
