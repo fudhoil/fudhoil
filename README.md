@@ -6,8 +6,10 @@
 
 ### [Fudhoil](https://fudhoil.vercel.app)
 
-Since 2020, I have been actively involved in crafting websites and subsequently embarked on my professional career in 2021 as a full stack developer, primarily focusing on JavaScript and PHP frameworks.
+Starting from 2020, my journey into the world of web development began, and since then, I've passionately honed my skills in crafting exceptional websites. Embracing this newfound passion, I took the leap into my professional career as a full stack developer in 2021, specializing in JavaScript and PHP frameworks.
 
-Consistently driven to enhance myself, I am committed to acquiring knowledge about the most cutting-edge and up-to-date stacks and tools on a daily basis.
+Fuelled by a relentless pursuit of growth, I make it a personal commitment to stay abreast of the latest cutting-edge stacks and tools, dedicating time each day to expand my knowledge.
 
-Striving for continuous progress, I aim to make at least one new (git) commit every week in either private or public repositories.
+Continuing on the path of improvement, my goal remains to contribute actively to my code repositories. To achieve this, I strive to make a fresh (git) commit every week, whether it be on private or public repositories, ensuring consistent progress in my projects.
+
+As I move forward in my career, I eagerly embrace new challenges and opportunities, eager to create innovative solutions and positively impact the digital landscape. The passion for web development and the drive for constant improvement propel me on this exciting journey.
