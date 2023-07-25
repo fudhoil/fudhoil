@@ -83,8 +83,8 @@ const Projects = (props: Props) => {
   return (
     <div
       id="projects"
-      className="relative w-full flex overflow-x-scroll overflow-y-hidden
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 space-x-5">
+      className="relative w-full flex overflow-x-scroll overflow-y-hidden flex-col md:flex-row md:overflow-x-hidden
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 md:space-x-5">
       {projects.map((project, i) => (
         <div
           key={i}

@@ -18,7 +18,7 @@ const Header = (props: Props) => {
       style={{
         position: "absolute",
         top: "0",
-        width: "70%",
+        width: "80%",
         height: "3rem",
         display: "flex",
         gap: "1rem",

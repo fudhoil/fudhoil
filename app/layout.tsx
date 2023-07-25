@@ -26,7 +26,7 @@ export default function RootLayout({
             style={{
               fontFamily: "Alaska, sans-serif",
               color: "#f9e2b8",
-              width: "30%",
+              width: "20%",
               height: "100%",
               backgroundColor: "#c29adc",
               display: "flex",
@@ -73,7 +73,7 @@ export default function RootLayout({
               display: "flex",
               flexDirection: "column",
               height: "100%",
-              width: "70%",
+              width: "80%",
               overflow: "scroll",
             }}
             className="scrollbar scrollbar-thumb-[#c29adc]">
