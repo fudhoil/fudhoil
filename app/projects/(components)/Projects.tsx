@@ -84,7 +84,7 @@ const Projects = (props: Props) => {
     <div
       id="projects"
       className="relative w-full flex overflow-x-scroll overflow-y-hidden flex-col md:flex-row md:overflow-x-hidden
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 md:space-x-5">
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 pr-5 md:pr-0 md:space-x-5">
       {projects.map((project, i) => (
         <div
           key={i}
@@ -106,7 +106,7 @@ const Projects = (props: Props) => {
           </div>
 
           <div className="space-y-5 px-0 md:px-10">
-            <h4 className="text-xl font-semibold text-center">
+            <h4 className="text-xl font-semibold text-start md:text-center">
               <span className="underline decoration-[#5F9DF7]/50">
                 Case Study {i + 1} of {projects.length}:
               </span>{" "}
