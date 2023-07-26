@@ -2,19 +2,18 @@
 import Link from "next/link";
 import React from "react";
 import LoadingBar from "react-top-loading-bar";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 type Props = {};
 
 const Header = (props: Props) => {
-  const router = useRouter();
-  const ref = React.useRef(null);
-
-  const [path, setPath] = React.useState<string>(router.pathname);
+  const pathname = usePathname();
+  const [path, setPath] = React.useState(pathname);
+  const ref = React.useRef<any>(null);
 
   React.useEffect(() => {
-    setPath(router.pathname);
-  }, [router.pathname]);
+    setPath(pathname);
+  }, [pathname]);
   return (
     <div
       style={{
