@@ -17,7 +17,7 @@ export default function RootLayout({
           margin: "0",
           padding: "0",
         }}>
-        <NextTopLoader color="#c29adc" />
+        <NextTopLoader color="#f9e2b8" />
         <main
           style={{
             height: "100vh",
