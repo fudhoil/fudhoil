@@ -1,14 +1,34 @@
+"use client";
 import Head from "./head";
 import Header from "./(components)/Header";
 import "../styles/globals.css";
 import Image from "next/image";
 import NextTopLoader from "nextjs-toploader";
+import React from "react";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth < 1024) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  React.useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <html>
       <Head />
@@ -47,7 +67,8 @@ export default function RootLayout({
                 fontSize: "calc(3rem + 3vw)",
                 margin: "3rem auto",
                 justifyContent: "center",
-              }}>
+              }}
+              className={`${isMobile ? "whitespace-nowrap" : ""}`}>
               Software Engineer
             </h1>
             {/* <div

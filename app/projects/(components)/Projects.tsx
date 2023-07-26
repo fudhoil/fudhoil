@@ -72,6 +72,14 @@ const Projects = (props: Props) => {
       description:
         "World Wide Community (WWC) is a web application that allows users to explore the event and its details. Users can also register for the event.",
     },
+    {
+      image:
+        "https://ik.imagekit.io/4iquqthi3/Screenshot%202023-07-26%20221543_KfKZwlB9Z.png?updatedAt=1690385511538",
+      title: "Abracadabra Events Website",
+      id: "abracadabra-events-web",
+      description:
+        "Abracadabra Events is a PWAs web application (privately in development)",
+    },
   ];
 
   React.useEffect(() => {
@@ -108,7 +116,10 @@ const Projects = (props: Props) => {
               draggable={false}
               layout="fill"
               objectFit="contain"
-              className="rounded-md"
+              // blurred the last image
+              className={`${
+                i === projects.length - 1 ? "filter blur-md" : ""
+              } "rounded-md"`}
             />
           </div>
 

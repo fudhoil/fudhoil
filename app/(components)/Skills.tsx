@@ -22,6 +22,8 @@ import {
   SiGooglecloud,
   SiRedux,
   SiDirectus,
+  SiExpress,
+  SiVuedotjs,
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
@@ -42,7 +44,7 @@ const Skills = (props: Props) => {
           fontWeight: "900",
           lineHeight: "1.2",
         }}>
-        for sure he understood these stuffs
+        Fully grasps these stacks and beyond.
       </h3>
 
       <div className="grid grid-cols-5 gap-5">
@@ -55,7 +57,7 @@ const Skills = (props: Props) => {
         <Skill component={<SiReact />} link={"https://reactjs.org/"} />
         <Skill component={<SiMongodb />} link={"https://www.mongodb.com/"} />
         <Skill component={<SiVercel />} link={"https://www.vercel.com/"} />
-        <Skill component={<SiAndroid />} link={"https://www.android.com/"} />
+        {/* <Skill component={<SiAndroid />} link={"https://www.android.com/"} /> */}
         <Skill component={<SiGithub />} link={"https://www.github.com/"} />
         <Skill
           component={<TbBrandReactNative />}
@@ -94,6 +96,8 @@ const Skills = (props: Props) => {
           link={"https://firebase.google.com/"}
         />
         <Skill component={<SiGraphql />} link={"https://graphql.org/"} />
+        <Skill component={<SiExpress />} link={"https://expressjs.com/"} />
+        <Skill component={<SiVuedotjs />} link={"https://v3.vuejs.org/"} />
       </div>
     </div>
   );
