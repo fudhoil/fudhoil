@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import LoadingBar from "react-top-loading-bar";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 type Props = {};
 
