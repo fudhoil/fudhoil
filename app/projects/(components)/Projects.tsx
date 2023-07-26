@@ -106,16 +106,13 @@ const Projects = (props: Props) => {
           </div>
 
           <div className="space-y-5 px-0 md:px-10">
-            <h4 className="text-xl font-semibold text-start md:text-center">
+            <h4 className="text-xl font-semibold text-start">
               <span className="underline decoration-[#5F9DF7]/50">
-                Case Study {i + 1} of {projects.length}:
-              </span>{" "}
-              {project.title}
+                {project.title}
+              </span>
             </h4>
 
-            <p className="text-sm text-center md:text-left">
-              {project.description}
-            </p>
+            <p className="text-sm text-left">{project.description}</p>
           </div>
         </div>
       ))}

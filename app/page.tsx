@@ -78,7 +78,7 @@ const HomePage = () => {
             style={{
               position: "absolute",
               bottom: isTablet ? "7rem" : "7rem",
-              left: isMobile ? "-8rem" : isTablet ? "7rem" : "3rem",
+              left: isMobile ? "-7.5rem" : isTablet ? "7rem" : "3rem",
               fontSize: isMobile ? "3.7rem" : "6rem",
               fontWeight: "900",
               fontFamily: "Alaska, sans-serif",
