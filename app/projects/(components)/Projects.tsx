@@ -84,28 +84,30 @@ const Projects = (props: Props) => {
     <div
       id="projects"
       className="relative w-full flex overflow-x-scroll overflow-y-hidden flex-col md:flex-row md:overflow-x-hidden
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 pr-5 md:pr-0 md:space-x-5">
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#c29adc]/80 pr-5 my-5 gap-5
+      lg:grid lg:grid-cols-2">
       {projects.map((project, i) => (
         <div
           key={i}
           id={project.id}
-          className="scroll w-full max-w-xl flex-shrink-0 items-center flex flex-col space-y-3 justify-center px-0 md:px-0 py-4">
-          <div
-            style={{
-              position: "relative",
-            }}>
+          className="scroll w-full max-w-xl flex-shrink-0 items-center flex flex-col justify-center space-y-4 my-5 lg:max-w-full p-4"
+          style={{
+            // bottom
+            boxShadow: "0 4px 2px -2px rgba(0, 0, 0, 0.25)",
+            borderRadius: "1rem",
+          }}>
+          <div className="relative w-full h-[10rem] md:h-[20rem]">
             <Image
               src={project.image}
               alt="Project Image"
-              width={100}
-              height={100}
-              layout="responsive"
-              objectFit="contain"
               draggable={false}
+              layout="fill"
+              objectFit="contain"
+              className="rounded-md"
             />
           </div>
 
-          <div className="space-y-5 px-0 md:px-10">
+          <div className="space-y-5">
             <h4 className="text-xl font-semibold text-start">
               <span className="underline decoration-[#5F9DF7]/50">
                 {project.title}
