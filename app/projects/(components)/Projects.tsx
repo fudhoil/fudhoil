@@ -90,11 +90,17 @@ const Projects = (props: Props) => {
         <div
           key={i}
           id={project.id}
-          className="scroll w-full max-w-xl flex-shrink-0 items-center flex flex-col justify-center space-y-4 my-5 lg:max-w-full p-4"
-          style={{
-            // bottom
-            boxShadow: "0 4px 0px -2px #ffffff",
-          }}>
+          className="scroll w-full max-w-xl flex-shrink-0 items-center flex flex-col justify-center space-y-4 my-5 lg:max-w-full p-4 relative">
+          <span
+            style={{
+              position: "absolute",
+              bottom: 0,
+              right: 0,
+              width: "100%",
+              height: "30%",
+              // bottom
+              boxShadow: "4px 4px 0px -2px #ffffff",
+            }}></span>
           <div className="relative w-full h-[10rem] md:h-[20rem]">
             <Image
               src={project.image}
