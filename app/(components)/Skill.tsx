@@ -11,7 +11,7 @@ type Props = {
 const Skill = ({ component, link }: Props) => {
   return (
     <div className="hover:scale-125">
-      <Link href={link}>
+      <Link href={link} target="_blank" rel="noopener noreferrer">
         <div>
           <IconContext.Provider
             value={{
