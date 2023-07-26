@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import LoadingBar from "react-top-loading-bar";
 import { usePathname } from "next/navigation";
 
 type Props = {};
@@ -9,11 +8,11 @@ type Props = {};
 const Header = (props: Props) => {
   const pathname = usePathname();
   const [path, setPath] = React.useState(pathname);
-  const ref = React.useRef<any>(null);
 
   React.useEffect(() => {
     setPath(pathname);
   }, [pathname]);
+
   return (
     <div
       style={{
@@ -26,7 +25,6 @@ const Header = (props: Props) => {
         backgroundColor: "#c29adc",
         zIndex: 2,
       }}>
-      <LoadingBar color="#f9e2b8" height={3} ref={ref} />
       <Link
         href="/"
         style={{
@@ -40,14 +38,7 @@ const Header = (props: Props) => {
         }}
         className={`${
           path === "/" ? "text-[#fff]" : "text-[#f9e2b8]"
-        } hover:text-[#fff]`}
-        onClick={() => {
-          setPath("/");
-          ref.current.continuousStart();
-          setTimeout(() => {
-            ref.current.complete();
-          }, 1000);
-        }}>
+        } hover:text-[#fff]`}>
         home
       </Link>
       <Link
@@ -63,14 +54,7 @@ const Header = (props: Props) => {
         }}
         className={`${
           path === "/projects" ? "text-[#fff]" : "text-[#f9e2b8]"
-        } hover:text-[#fff]`}
-        onClick={() => {
-          setPath("/projects");
-          ref.current.continuousStart();
-          setTimeout(() => {
-            ref.current.complete();
-          }, 1000);
-        }}>
+        } hover:text-[#fff]`}>
         projects
       </Link>
     </div>

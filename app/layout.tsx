@@ -2,6 +2,7 @@ import Head from "./head";
 import Header from "./(components)/Header";
 import "../styles/globals.css";
 import Image from "next/image";
+import NextTopLoader from "nextjs-toploader";
 
 export default function RootLayout({
   children,
@@ -16,6 +17,7 @@ export default function RootLayout({
           margin: "0",
           padding: "0",
         }}>
+        <NextTopLoader color="#c29adc" />
         <main
           style={{
             height: "100vh",
