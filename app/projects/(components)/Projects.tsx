@@ -93,8 +93,7 @@ const Projects = (props: Props) => {
           className="scroll w-full max-w-xl flex-shrink-0 items-center flex flex-col justify-center space-y-4 my-5 lg:max-w-full p-4"
           style={{
             // bottom
-            boxShadow: "0 4px 2px -2px rgba(0, 0, 0, 0.25)",
-            borderRadius: "1rem",
+            boxShadow: "0 4px 0px -2px #ffffff",
           }}>
           <div className="relative w-full h-[10rem] md:h-[20rem]">
             <Image
