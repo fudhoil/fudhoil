@@ -7,11 +7,6 @@ type Props = {};
 
 const Header = (props: Props) => {
   const pathname = usePathname();
-  const [path, setPath] = React.useState(pathname);
-
-  React.useEffect(() => {
-    setPath(pathname);
-  }, [pathname]);
 
   return (
     <div
@@ -34,10 +29,10 @@ const Header = (props: Props) => {
           fontWeight: "900",
           display: "flex",
           alignItems: "center",
-          textDecoration: path === "/" ? "underline #f9e2b8" : "none",
+          textDecoration: pathname === "/" ? "underline #f9e2b8" : "none",
         }}
         className={`${
-          path === "/" ? "text-[#fff]" : "text-[#f9e2b8]"
+          pathname === "/" ? "text-[#fff]" : "text-[#f9e2b8]"
         } hover:text-[#fff]`}>
         home
       </Link>
@@ -50,10 +45,11 @@ const Header = (props: Props) => {
           fontWeight: "900",
           display: "flex",
           alignItems: "center",
-          textDecoration: path === "/projects" ? "underline #f9e2b8" : "none",
+          textDecoration:
+            pathname === "/projects" ? "underline #f9e2b8" : "none",
         }}
         className={`${
-          path === "/projects" ? "text-[#fff]" : "text-[#f9e2b8]"
+          pathname === "/projects" ? "text-[#fff]" : "text-[#f9e2b8]"
         } hover:text-[#fff]`}>
         projects
       </Link>
