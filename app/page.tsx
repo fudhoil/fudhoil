@@ -76,8 +76,8 @@ const HomePage = () => {
         <div
           style={{
             position: "absolute",
-            bottom: isTablet ? "7rem" : "7rem",
-            left: "calc(100vw/15 + -1em)",
+            bottom: "calc(100vh/10)",
+            left: "calc(100vw/15 + -1.7em)",
             fontSize: "calc(100vw/15 + 1rem)",
             fontWeight: "900",
             fontFamily: "Alaska, sans-serif",
