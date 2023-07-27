@@ -69,7 +69,7 @@ export default function RootLayout({
                 justifyContent: "center",
               }}
               className={`${isMobile ? "whitespace-nowrap" : ""}`}>
-              Software Engineer
+              Software Developer
             </h1>
             {/* <div
               style={{
