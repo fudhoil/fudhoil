@@ -24,6 +24,24 @@ const Projects = (props: Props) => {
     },
     {
       image:
+        "https://ik.imagekit.io/4iquqthi3/Screenshot%202023-07-27%20221341_2mkSZ7PoY.png?updatedAt=1690470933482",
+      title: "Anime List",
+      id: "anime-list",
+      description:
+        "Anime List is a web application that allows users to explore anime and manga. Users can also add anime and manga to their favorites.",
+      link: "https://anime-list-fudhoil.vercel.app/",
+    },
+    {
+      image:
+        "https://ik.imagekit.io/4iquqthi3/Screenshot%202023-07-27%20221423_m6T-Rn2ct.png?updatedAt=1690470932626",
+      title: "Realtime Chat App",
+      id: "realtime-chat-app",
+      description:
+        "Realtime Chat App is a web application that allows users to chat with other users in realtime.",
+      link: "https://realtimechat-fudhoil.vercel.app/",
+    },
+    {
+      image:
         "https://ik.imagekit.io/4iquqthi3/react-amazon_CficiHbdr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665820014334",
       title: "React Amazon Clone",
       id: "react-amazon-clone",
