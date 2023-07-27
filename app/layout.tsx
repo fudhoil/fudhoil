@@ -64,7 +64,7 @@ export default function RootLayout({
                 fontWeight: "900",
                 // mixBlendMode: "difference",
                 color: "#ffffff",
-                fontSize: "calc(3rem + 3vw)",
+                fontSize: "calc(100vw/15)",
                 margin: "3rem auto",
                 justifyContent: "center",
               }}
