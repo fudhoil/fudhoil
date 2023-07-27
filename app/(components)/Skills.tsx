@@ -104,14 +104,14 @@ const Skills = (props: Props) => {
             detail={"React Native"}
           />
           <Skill
-            component={<SiPhp />}
-            link={"https://www.php.net/"}
-            detail={"PHP"}
-          />
-          <Skill
             component={<SiTailwindcss />}
             link={"https://tailwindcss.com/"}
             detail={"TailwindCSS"}
+          />
+          <Skill
+            component={<SiPhp />}
+            link={"https://www.php.net/"}
+            detail={"PHP"}
           />
           <Skill
             component={<SiPostgresql />}
@@ -119,9 +119,9 @@ const Skills = (props: Props) => {
             detail={"PostgreSQL"}
           />
           <Skill
-            component={<SiGit />}
-            link={"https://git-scm.com/"}
-            detail={"Git"}
+            component={<SiTypescript />}
+            link={"https://www.typescriptlang.org/"}
+            detail={"Typescript"}
           />
           <Skill
             component={<SiGitlab />}
@@ -154,14 +154,14 @@ const Skills = (props: Props) => {
             detail={"Redux"}
           />
           <Skill
-            component={<SiTypescript />}
-            link={"https://www.typescriptlang.org/"}
-            detail={"Typescript"}
-          />
-          <Skill
             component={<SiApollographql />}
             link={"https://www.apollographql.com/"}
             detail={"Apollo GraphQL"}
+          />
+          <Skill
+            component={<SiGit />}
+            link={"https://git-scm.com/"}
+            detail={"Git"}
           />
           <Skill
             component={<SiDirectus />}
