@@ -4,7 +4,7 @@
 
 <!-- my website -->
 
-_visit_ ### [Fudhoil](https://fudhoil.vercel.app)
+_visit_ [Fudhoil](https://fudhoil.vercel.app)
 
 Starting from 2020, my journey into the world of web development began, and since then, I've passionately honed my skills in crafting exceptional websites. Embracing this newfound passion, I took the leap into my professional career as a full stack developer in 2021, specializing in JavaScript and PHP (native/frameworks).
 
